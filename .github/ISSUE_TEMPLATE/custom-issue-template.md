@@ -1,7 +1,7 @@
 ---
 name: Custom issue template
 about: for test
-title: ''
+title: 'prefix : 작업 제목'
 labels: ''
 assignees: ''
 
