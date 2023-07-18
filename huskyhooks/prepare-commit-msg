@@ -1,3 +1,4 @@
+# project-name/feature-XXX -> [project]feature 접두사 생성
 COMMIT_MSG_FILE=$1
 
 BRANCH_NAME=`git rev-parse --abbrev-ref HEAD`
@@ -18,5 +19,3 @@ fi
 if [ -z "$FIRST_LINE" ]; then
     sed -i ".bak" "1s/^/[$PROJECT_NAME] $PREFIX /" ${COMMIT_MSG_FILE}
 fi
-
-# project-name/feature-XXX -> [project]feature 접두사 생성
